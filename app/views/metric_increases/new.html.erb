@@ -1,0 +1,7 @@
+<%= form_with model: @metric_increase do |form| %>
+  <%= form.label :name, "Metric name" %>
+  <%= form.text_field :name %>
+  <%= form.check_box :fail_operation %>
+  <%= form.label :fail_operation, "Fail operation" %>
+  <%= form.submit %>
+<% end %>
