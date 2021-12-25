@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MetricIncreasesController < ApplicationController
   def new
     @metric_increase = MetricIncrease.new
