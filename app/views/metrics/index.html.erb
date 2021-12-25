@@ -1,0 +1,22 @@
+<h1>Metrics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @metrics.each do |metric| %>
+      <tr>
+        <td>
+          <%= metric.name %>
+        </td>
+        <td>
+          <%= metric.value %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
