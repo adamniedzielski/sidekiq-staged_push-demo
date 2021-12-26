@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/adamniedzielski/sidekiq-staged_push.git
+  revision: a86a26bc2b9122578574e28a970c5d3210f1baac
+  branch: main
+  specs:
+    sidekiq-staged_push (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -174,6 +181,7 @@ DEPENDENCIES
   rubocop
   rubocop-rails
   sidekiq
+  sidekiq-staged_push!
   tzinfo-data
 
 RUBY VERSION

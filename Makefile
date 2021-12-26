@@ -18,3 +18,6 @@ sidekiq:
 
 rubocop:
 	docker-compose run --rm web bundle exec rubocop
+
+bash:
+	docker-compose run --rm web bash

@@ -12,6 +12,7 @@ services:
     volumes:
       - ".:/app"
       - bundle:/bundle
+      - "../sidekiq-staged_push:/sidekiq-staged_push"
     ports:
       - "3000:3000"
     depends_on:
