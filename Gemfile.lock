@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/adamniedzielski/sidekiq-staged_push.git
-  revision: a86a26bc2b9122578574e28a970c5d3210f1baac
-  branch: main
+  revision: fbbb7c11a6e6bf17d5f66ee2cd2a9b6339d83fea
+  branch: prototype-gem-api
   specs:
     sidekiq-staged_push (0.1.0)
 
