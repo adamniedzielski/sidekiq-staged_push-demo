@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/adamniedzielski/sidekiq-staged_push.git
-  revision: 0ea8b636c15b9c7fff26580cb4bd70e676d71035
-  branch: prototype-gem-api
+  revision: fb79033fc2d13a3763d02cde40de11c5a266f84a
+  branch: main
   specs:
     sidekiq-staged_push (0.1.0)
       activerecord (>= 5.2.0)
