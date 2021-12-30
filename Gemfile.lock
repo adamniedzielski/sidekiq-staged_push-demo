@@ -1,9 +1,11 @@
 GIT
   remote: https://github.com/adamniedzielski/sidekiq-staged_push.git
-  revision: a86a26bc2b9122578574e28a970c5d3210f1baac
+  revision: fb79033fc2d13a3763d02cde40de11c5a266f84a
   branch: main
   specs:
     sidekiq-staged_push (0.1.0)
+      activerecord (>= 5.2.0)
+      sidekiq (>= 6.3.1)
 
 GEM
   remote: https://rubygems.org/
@@ -93,8 +95,6 @@ GEM
     mini_mime (1.1.2)
     minitest (5.15.0)
     nio4r (2.5.8)
-    nokogiri (1.12.5-x86_64-darwin)
-      racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     parallel (1.21.0)
@@ -149,7 +149,7 @@ GEM
       rubocop-ast (>= 1.15.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.15.0)
+    rubocop-ast (1.15.1)
       parser (>= 3.0.1.1)
     rubocop-rails (2.13.0)
       activesupport (>= 4.2.0)
@@ -167,10 +167,9 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.5.1)
+    zeitwerk (2.5.2)
 
 PLATFORMS
-  x86_64-darwin-20
   x86_64-linux-musl
 
 DEPENDENCIES
