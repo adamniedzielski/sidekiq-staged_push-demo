@@ -1,24 +1,26 @@
-# README
+# Example app for `sidekiq-staged_push`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application that demonstrates how to use
+[`sidekiq-staged_push`](https://github.com/adamniedzielski/sidekiq-staged_push)
+and what kind of problem the gem is trying to solve.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+You need Docker with Docker Compose.
 
-* System dependencies
+```
+make build
+make bundle
+make dbsetup
+```
 
-* Configuration
+## Running
 
-* Database creation
+In two separate terminal tabs:
 
-* Database initialization
+```
+make server
+make sidekiq
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to http://localhost:3000 and try different options.
