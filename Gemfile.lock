@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/adamniedzielski/sidekiq-staged_push.git
-  revision: fb79033fc2d13a3763d02cde40de11c5a266f84a
-  branch: main
-  specs:
-    sidekiq-staged_push (0.1.0)
-      activerecord (>= 5.2.0)
-      sidekiq (>= 6.3.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -160,6 +151,9 @@ GEM
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
+    sidekiq-staged_push (0.1.0)
+      activerecord (>= 5.2.0)
+      sidekiq (>= 6.3.1)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -180,7 +174,7 @@ DEPENDENCIES
   rubocop
   rubocop-rails
   sidekiq
-  sidekiq-staged_push!
+  sidekiq-staged_push
   tzinfo-data
 
 RUBY VERSION
