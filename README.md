@@ -23,4 +23,5 @@ make server
 make sidekiq
 ```
 
-Go to http://localhost:3000 and try different options.
+Go to http://localhost:3000 and try different options. You can change the value of
+`USE_STAGED_PUSH` in `.env.dev` to compare between the default behaviour and the gem behaviour.

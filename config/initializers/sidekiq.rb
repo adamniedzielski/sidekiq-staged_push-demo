@@ -8,4 +8,4 @@ Sidekiq.configure_client do |config|
   config.redis = { url: ENV.fetch("REDIS_URL") }
 end
 
-Sidekiq::StagedPush.enable!
+Sidekiq::StagedPush.enable! if ENV.fetch("USE_STAGED_PUSH") == "true"
