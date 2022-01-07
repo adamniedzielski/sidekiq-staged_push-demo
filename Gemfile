@@ -10,6 +10,12 @@ gem "rails", "~> 7.0.0"
 gem "pg", "~> 1.1"
 
 gem "sidekiq"
+
+source "https://enterprise.contribsys.com/" do
+  gem "sidekiq-pro"
+  gem "sidekiq-ent"
+end
+
 gem "sidekiq-staged_push"
 
 # Use the Puma web server [https://github.com/puma/puma]
