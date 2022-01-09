@@ -30,5 +30,5 @@ If you have access to Sidekiq Enterprise subscription you can flip `USE_SIDEKIQ_
 `true`, set `BUNDLE_ENTERPRISE__CONTRIBSYS__COM` in your shell and run `make bundle`. Now you
 can start multiple Sidekiq processes and
 [Leader Election](https://github.com/mperham/sidekiq/wiki/Ent-Leader-Election) will take care
-that only one process is copying the jobs from the database to Redis. See
+that only one process is copying jobs from the database to Redis. See
 [gotchas](https://github.com/adamniedzielski/sidekiq-staged_push#gotchas).
