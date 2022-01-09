@@ -6,7 +6,8 @@ services:
       target: dev
     env_file:
       - .env.dev
-      - .env.dev.secret
+    environment:
+      - BUNDLE_ENTERPRISE__CONTRIBSYS__COM
     stdin_open: true
     tty: true
     command: bundle exec rails server --binding 0.0.0.0
@@ -24,7 +25,6 @@ services:
       target: dev
     env_file:
       - .env.dev
-      - .env.dev.secret
     stdin_open: true
     tty: true
     command: bundle exec sidekiq
