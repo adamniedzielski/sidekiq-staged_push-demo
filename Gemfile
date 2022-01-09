@@ -11,9 +11,11 @@ gem "pg", "~> 1.1"
 
 gem "sidekiq"
 
-source "https://enterprise.contribsys.com/" do
-  gem "sidekiq-pro"
-  gem "sidekiq-ent"
+if ENV.fetch("USE_SIDEKIQ_ENTERPRISE", "false") == "true"
+  source "https://enterprise.contribsys.com/" do
+    gem "sidekiq-pro"
+    gem "sidekiq-ent"
+  end
 end
 
 gem "sidekiq-staged_push"
