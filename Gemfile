@@ -9,7 +9,8 @@ gem "rails", "~> 7.0.0"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
-gem "sidekiq"
+gem "sidekiq", github: "adamniedzielski/sidekiq", branch: "adam-require-transaction-aware-client"
+gem "after_commit_everywhere"
 
 if ENV.fetch("USE_SIDEKIQ_ENTERPRISE", "false") == "true"
   source "https://enterprise.contribsys.com/" do
