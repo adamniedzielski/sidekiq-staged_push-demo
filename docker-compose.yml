@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   web:
+    platform: linux/x86_64
     build:
       context: .
       target: dev
@@ -20,6 +21,7 @@ services:
       - db
       - redis
   sidekiq:
+    platform: linux/x86_64
     build:
       context: .
       target: dev
@@ -35,10 +37,12 @@ services:
       - db
       - redis
   db:
+    platform: linux/x86_64
     image: "healthcheck/postgres:alpine"
     environment:
       POSTGRES_PASSWORD: db_password
   redis:
+    platform: linux/x86_64
     image: "redis:6-alpine"
     command: redis-server
     ports:
